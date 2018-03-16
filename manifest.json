@@ -1,0 +1,19 @@
+{
+// Required
+    "name": "Teacher Button",
+    "version": "1.0",
+    "manifest_version": 2,
+// Recommended
+    "description" : "Chat with a Teacher",
+    "icons": {
+      "128": "chartreux.png"
+    },
+// Action Type: Browser, Page or none
+   "browser_action": {
+   "default_popup": "popup.html"
+  },
+// Intent of Extension. What you will access from the user
+    "permissions": [
+      "http://*/*", "https://*/*"
+    ]
+  }
