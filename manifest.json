@@ -1,15 +1,23 @@
 {
 // Required
-"name": "Teacher Button",
-"version": "1.0",
+"name": "InstaMentor",
+"version": "0.0.1",
 "manifest_version": 2,
 // Recommended
-"description" : "Chat with a Teacher",
-"icons": {"128": "chartreux.png"},
+"description" : "Connect to teacher via InstaMentor",
+"icons": {"512": "instamentor_button.png"},
 // Action Type: Browser, Page or none
-"browser_action": {"default_popup": "popup.html"},
-"content_scripts": [{"matches": ["https://www.coursera.org/*"],"js": ["chat.js"]}],
+"browser_action": {
+  "default_popup": "popup.html"
+},
+"content_scripts": [
+  {"matches":
+    ["https://www.coursera.org/*", "https://home.babbel.com/*", "https://www.udemy.com/*"],
+    "js": ["chat.js"]
+  }
+],
 // Intent of Extension. What you will access from the user
 "permissions": [
-  "tabs","http://*/*", "https://*/*"],
+  "tabs","http://*/*", "https://*/*"]
 }
+
